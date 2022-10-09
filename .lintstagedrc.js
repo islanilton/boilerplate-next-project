@@ -8,6 +8,9 @@ module.exports = {
     `yarn prettier --write ${filenames.join(' ')}`
   ],
 
+  // execute tests
+  '**/*.(ts|tsx)': () => 'yarn test',
+
   // Prettify only Markdown and JSON files
   '**/*.(md|json)': (filenames) =>
     `yarn prettier --write ${filenames.join(' ')}`
