@@ -6,8 +6,6 @@ interface Props {
   title: string
 }
 
-const blar = 'Var'
-
 export default function Home({ title = 'React Avançado' }: Props) {
   return (
     <div className={styles.container}>
