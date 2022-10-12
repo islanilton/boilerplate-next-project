@@ -9,7 +9,8 @@ module.exports = {
   ],
 
   // execute tests
-  '**/*.(ts|tsx)': () => 'yarn test --findRelatedTests --bail',
+  '**/*.(ts|tsx)': (filenames) =>
+    `yarn test --bail --findRelatedTests ${filenames.join(' ')}`,
 
   // Prettify only Markdown and JSON files
   '**/*.(md|json)': (filenames) =>
