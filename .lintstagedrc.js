@@ -9,7 +9,7 @@ module.exports = {
   ],
 
   // execute tests
-  '**/*.(ts|tsx)': () => 'yarn test',
+  '**/*.(ts|tsx)': () => 'yarn test --bail',
 
   // Prettify only Markdown and JSON files
   '**/*.(md|json)': (filenames) =>
